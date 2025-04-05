@@ -1,0 +1,2 @@
+afifo_w8_d4k.v,verilog,xil_defaultlib,../../../../switch_32.gen/sources_1/ip/afifo_w8_d4k/sim/afifo_w8_d4k.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

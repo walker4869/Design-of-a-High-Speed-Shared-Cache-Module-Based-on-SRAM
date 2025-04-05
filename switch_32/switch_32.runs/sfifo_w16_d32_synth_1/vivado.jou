@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sat May  4 14:06:52 2024
+# Process ID: 14708
+# Current directory: E:/vivado_project/switch/switch.runs/sfifo_w16_d32_synth_1
+# Command line: vivado.exe -log sfifo_w16_d32.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source sfifo_w16_d32.tcl
+# Log file: E:/vivado_project/switch/switch.runs/sfifo_w16_d32_synth_1/sfifo_w16_d32.vds
+# Journal file: E:/vivado_project/switch/switch.runs/sfifo_w16_d32_synth_1\vivado.jou
+# Running On: Sherlock, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 12, Host memory: 17024 MB
+#-----------------------------------------------------------
+source sfifo_w16_d32.tcl -notrace

@@ -1,0 +1,1 @@
+--incr --debug typical --relax --mt 2  -L blk_mem_gen_v8_4_6 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot dpsram_w128_d2k xil_defaultlib.dpsram_w128_d2k xil_defaultlib.glbl -log elaborate.log

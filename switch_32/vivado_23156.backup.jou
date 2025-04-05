@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sun May 19 20:58:32 2024
+# Process ID: 23156
+# Current directory: E:/vivado_project/switch_32
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent18712 E:\vivado_project\switch_32\switch_32.xpr
+# Log file: E:/vivado_project/switch_32/vivado.log
+# Journal file: E:/vivado_project/switch_32\vivado.jou
+# Running On: Sherlock, OS: Windows, CPU Frequency: 3294 MHz, CPU Physical cores: 12, Host memory: 17024 MB
+#-----------------------------------------------------------
+start_gui
+open_project E:/vivado_project/switch_32/switch_32.xpr
+update_compile_order -fileset sources_1

@@ -1,0 +1,31 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../switch_32.gen/sources_1/ip/sfifo_w16_d32/sim/sfifo_w16_d32.v" \
+"../../../../switch_32.gen/sources_1/ip/sfifo_w8_d4k/sim/sfifo_w8_d4k.v" \
+"../../../../switch_32.gen/sources_1/ip/sfifo_ft_w144_d256/sim/sfifo_ft_w144_d256.v" \
+"../../../../switch_32.gen/sources_1/ip/sram_w128_d2k/sim/sram_w128_d2k.v" \
+"../../../../switch_32.gen/sources_1/ip/sfifo_ft_w16_d32/sim/sfifo_ft_w16_d32.v" \
+"../../../../switch_32.gen/sources_1/ip/sram_w16_d512/sim/sram_w16_d512.v" \
+"../../../../switch_32.gen/sources_1/ip/sfifo_ft_w14_d1024/sim/sfifo_ft_w14_d1024.v" \
+"../../../../switch_32.gen/sources_1/ip/sfifo_ft_w128_d256/sim/sfifo_ft_w128_d256.v" \
+"../../../../switch_32.gen/sources_1/ip/sfifo_w8_d16k/sim/sfifo_w8_d16k.v" \
+"../../../../switch_32.gen/sources_1/ip/afifo_w16_d32/sim/afifo_w16_d32.v" \
+"../../../../switch_32.gen/sources_1/ip/afifo_w8_d4k/sim/afifo_w8_d4k.v" \
+"../../../../switch_32.srcs/sources_1/new/frame_process.v" \
+"../../../../switch_32.srcs/sources_1/new/interface_mux.v" \
+"../../../../switch_32.srcs/sources_1/new/multi_user_fq.v" \
+"../../../../switch_32.srcs/sources_1/new/port_in.v" \
+"../../../../switch_32.srcs/sources_1/new/switch_core.v" \
+"../../../../switch_32.srcs/sources_1/new/switch_post.v" \
+"../../../../switch_32.srcs/sources_1/new/switch_post_top.v" \
+"../../../../switch_32.srcs/sources_1/new/switch_pre.v" \
+"../../../../switch_32.srcs/sources_1/new/switch_qc.v" \
+"../../../../switch_32.srcs/sources_1/new/switch_sram.v" \
+"../../../../switch_32.srcs/sources_1/new/switch_top.v" \
+"../../../../switch_32.srcs/sources_1/new/tb1.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

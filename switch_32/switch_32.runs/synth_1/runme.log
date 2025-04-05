@@ -1,0 +1,1662 @@
+
+*** Running vivado
+    with args -log switch_top_tb.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source switch_top_tb.tcl
+
+
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source switch_top_tb.tcl -notrace
+
+*** Running vivado
+    with args -log switch_top_tb.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source switch_top_tb.tcl
+
+
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source switch_top_tb.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 476.586 ; gain = 180.332
+Command: read_checkpoint -auto_incremental -incremental D:/vivado_works/switch/switch.srcs/utils_1/imports/synth_1/multi_user_fq.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from D:/vivado_works/switch/switch.srcs/utils_1/imports/synth_1/multi_user_fq.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top switch_top_tb -part xc7a200tfbg676-2
+Starting synth_design
+INFO: [IP_Flow 19-2162] IP 'sfifo_ft_w144_d256' is locked:
+* IP definition 'FIFO Generator (13.2)' for IP 'sfifo_ft_w144_d256' (customized with software release 2023.1) has a different revision in the IP Catalog.
+INFO: [IP_Flow 19-2162] IP 'sfifo_ft_w10_d512' is locked:
+* IP definition 'FIFO Generator (13.2)' for IP 'sfifo_ft_w10_d512' (customized with software release 2023.1) has a different revision in the IP Catalog.
+INFO: [IP_Flow 19-2162] IP 'sfifo_w16_d32' is locked:
+* IP definition 'FIFO Generator (13.2)' for IP 'sfifo_w16_d32' (customized with software release 2023.1) has a different revision in the IP Catalog.
+INFO: [IP_Flow 19-2162] IP 'sfifo_ft_w16_d32' is locked:
+* IP definition 'FIFO Generator (13.2)' for IP 'sfifo_ft_w16_d32' (customized with software release 2023.1) has a different revision in the IP Catalog.
+INFO: [IP_Flow 19-2162] IP 'sram_w16_d512' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'sram_w16_d512' (customized with software release 2023.1) has a different revision in the IP Catalog.
+INFO: [IP_Flow 19-2162] IP 'sfifo_ft_w128_d256' is locked:
+* IP definition 'FIFO Generator (13.2)' for IP 'sfifo_ft_w128_d256' (customized with software release 2023.1) has a different revision in the IP Catalog.
+INFO: [IP_Flow 19-2162] IP 'dpsram_w4_d512' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'dpsram_w4_d512' (customized with software release 2023.1) has a different revision in the IP Catalog.
+INFO: [IP_Flow 19-2162] IP 'dpsram_w128_d2k' is locked:
+* IP definition 'Block Memory Generator (8.4)' for IP 'dpsram_w128_d2k' (customized with software release 2023.1) has a different revision in the IP Catalog.
+INFO: [IP_Flow 19-2162] IP 'sfifo_w8_d4k' is locked:
+* IP definition 'FIFO Generator (13.2)' for IP 'sfifo_w8_d4k' (customized with software release 2023.1) has a different revision in the IP Catalog.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+WARNING: [Vivado_Tcl 4-1809] The reference checkpoint is from an old version of Vivado; A full resynthesis flow will be run
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 7500
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1379.734 ; gain = 439.504
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'switch_top_tb' [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:22]
+WARNING: [Synth 8-6896] event control except as first statement of always block inside initial block, initial block items will be ignored [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:304]
+WARNING: [Synth 8-85] always block has no event control specified [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:112]
+INFO: [Synth 8-6157] synthesizing module 'switch_top' [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top.v:22]
+INFO: [Synth 8-6157] synthesizing module 'switch_pre' [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_pre.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_pre.v:60]
+INFO: [Synth 8-6155] done synthesizing module 'switch_pre' (0#1) [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_pre.v:24]
+INFO: [Synth 8-6157] synthesizing module 'switch_core' [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_core.v:22]
+INFO: [Synth 8-6157] synthesizing module 'sfifo_ft_w128_d256' [D:/vivado_works/switch/switch.runs/synth_1/.Xil/Vivado-22372-LAPTOP-UUSJEJ0K/realtime/sfifo_ft_w128_d256_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sfifo_ft_w128_d256' (0#1) [D:/vivado_works/switch/switch.runs/synth_1/.Xil/Vivado-22372-LAPTOP-UUSJEJ0K/realtime/sfifo_ft_w128_d256_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'sfifo_ft_w16_d32' [D:/vivado_works/switch/switch.runs/synth_1/.Xil/Vivado-22372-LAPTOP-UUSJEJ0K/realtime/sfifo_ft_w16_d32_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sfifo_ft_w16_d32' (0#1) [D:/vivado_works/switch/switch.runs/synth_1/.Xil/Vivado-22372-LAPTOP-UUSJEJ0K/realtime/sfifo_ft_w16_d32_stub.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_core.v:295]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_core.v:315]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_core.v:335]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_core.v:355]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_core.v:375]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_core.v:395]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_core.v:415]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_core.v:435]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_core.v:455]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_core.v:475]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_core.v:495]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_core.v:515]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_core.v:535]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_core.v:555]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_core.v:575]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_core.v:595]
+INFO: [Synth 8-6157] synthesizing module 'multi_user_fq' [D:/vivado_works/switch/switch.srcs/sources_1/new/multi_user_fq.v:29]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado_works/switch/switch.srcs/sources_1/new/multi_user_fq.v:56]
+INFO: [Synth 8-6157] synthesizing module 'sfifo_ft_w10_d512' [D:/vivado_works/switch/switch.runs/synth_1/.Xil/Vivado-22372-LAPTOP-UUSJEJ0K/realtime/sfifo_ft_w10_d512_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sfifo_ft_w10_d512' (0#1) [D:/vivado_works/switch/switch.runs/synth_1/.Xil/Vivado-22372-LAPTOP-UUSJEJ0K/realtime/sfifo_ft_w10_d512_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'multi_user_fq' (0#1) [D:/vivado_works/switch/switch.srcs/sources_1/new/multi_user_fq.v:29]
+INFO: [Synth 8-6157] synthesizing module 'dpsram_w4_d512' [D:/vivado_works/switch/switch.runs/synth_1/.Xil/Vivado-22372-LAPTOP-UUSJEJ0K/realtime/dpsram_w4_d512_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dpsram_w4_d512' (0#1) [D:/vivado_works/switch/switch.runs/synth_1/.Xil/Vivado-22372-LAPTOP-UUSJEJ0K/realtime/dpsram_w4_d512_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'switch_qc' [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_qc.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sfifo_w16_d32' [D:/vivado_works/switch/switch.runs/synth_1/.Xil/Vivado-22372-LAPTOP-UUSJEJ0K/realtime/sfifo_w16_d32_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sfifo_w16_d32' (0#1) [D:/vivado_works/switch/switch.runs/synth_1/.Xil/Vivado-22372-LAPTOP-UUSJEJ0K/realtime/sfifo_w16_d32_stub.v:6]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_qc.v:135]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_qc.v:216]
+INFO: [Synth 8-6157] synthesizing module 'sram_w16_d512' [D:/vivado_works/switch/switch.runs/synth_1/.Xil/Vivado-22372-LAPTOP-UUSJEJ0K/realtime/sram_w16_d512_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sram_w16_d512' (0#1) [D:/vivado_works/switch/switch.runs/synth_1/.Xil/Vivado-22372-LAPTOP-UUSJEJ0K/realtime/sram_w16_d512_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'switch_qc' (0#1) [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_qc.v:23]
+INFO: [Synth 8-6157] synthesizing module 'dpsram_w128_d2k' [D:/vivado_works/switch/switch.runs/synth_1/.Xil/Vivado-22372-LAPTOP-UUSJEJ0K/realtime/dpsram_w128_d2k_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'dpsram_w128_d2k' (0#1) [D:/vivado_works/switch/switch.runs/synth_1/.Xil/Vivado-22372-LAPTOP-UUSJEJ0K/realtime/dpsram_w128_d2k_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'switch_core' (0#1) [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_core.v:22]
+INFO: [Synth 8-6157] synthesizing module 'switch_post_top' [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_post_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'switch_post' [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_post.v:23]
+INFO: [Synth 8-6157] synthesizing module 'sfifo_ft_w144_d256' [D:/vivado_works/switch/switch.runs/synth_1/.Xil/Vivado-22372-LAPTOP-UUSJEJ0K/realtime/sfifo_ft_w144_d256_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sfifo_ft_w144_d256' (0#1) [D:/vivado_works/switch/switch.runs/synth_1/.Xil/Vivado-22372-LAPTOP-UUSJEJ0K/realtime/sfifo_ft_w144_d256_stub.v:6]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator !== with logical equality operator != [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_post.v:104]
+INFO: [Synth 8-155] case statement is not full and has no default [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_post.v:93]
+INFO: [Synth 8-6157] synthesizing module 'sfifo_w8_d4k' [D:/vivado_works/switch/switch.runs/synth_1/.Xil/Vivado-22372-LAPTOP-UUSJEJ0K/realtime/sfifo_w8_d4k_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'sfifo_w8_d4k' (0#1) [D:/vivado_works/switch/switch.runs/synth_1/.Xil/Vivado-22372-LAPTOP-UUSJEJ0K/realtime/sfifo_w8_d4k_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'switch_post' (0#1) [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_post.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'switch_post_top' (0#1) [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_post_top.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'switch_top' (0#1) [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'switch_top_tb' (0#1) [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:22]
+WARNING: [Synth 8-7137] Register ptr_fifo_din_reg in module multi_user_fq has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [D:/vivado_works/switch/switch.srcs/sources_1/new/multi_user_fq.v:54]
+WARNING: [Synth 8-6014] Unused sequential element sram_rd_dv_reg was removed.  [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_core.v:272]
+WARNING: [Synth 8-3848] Net rstn in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:25]
+WARNING: [Synth 8-3848] Net data_sof in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:26]
+WARNING: [Synth 8-3848] Net data_dv in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:27]
+WARNING: [Synth 8-3848] Net data_in in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:28]
+WARNING: [Synth 8-3848] Net ptr_fifo_rd0 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:29]
+WARNING: [Synth 8-3848] Net ptr_fifo_rd1 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:30]
+WARNING: [Synth 8-3848] Net ptr_fifo_rd2 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:31]
+WARNING: [Synth 8-3848] Net ptr_fifo_rd3 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:32]
+WARNING: [Synth 8-3848] Net ptr_fifo_rd4 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:33]
+WARNING: [Synth 8-3848] Net ptr_fifo_rd5 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:34]
+WARNING: [Synth 8-3848] Net ptr_fifo_rd6 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:35]
+WARNING: [Synth 8-3848] Net ptr_fifo_rd7 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:36]
+WARNING: [Synth 8-3848] Net ptr_fifo_rd8 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:37]
+WARNING: [Synth 8-3848] Net ptr_fifo_rd9 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:38]
+WARNING: [Synth 8-3848] Net ptr_fifo_rd10 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:39]
+WARNING: [Synth 8-3848] Net ptr_fifo_rd11 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:40]
+WARNING: [Synth 8-3848] Net ptr_fifo_rd12 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:41]
+WARNING: [Synth 8-3848] Net ptr_fifo_rd13 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:42]
+WARNING: [Synth 8-3848] Net ptr_fifo_rd14 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:43]
+WARNING: [Synth 8-3848] Net ptr_fifo_rd15 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:44]
+WARNING: [Synth 8-3848] Net data_fifo_rd0 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:45]
+WARNING: [Synth 8-3848] Net data_fifo_rd1 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:46]
+WARNING: [Synth 8-3848] Net data_fifo_rd2 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:47]
+WARNING: [Synth 8-3848] Net data_fifo_rd3 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:48]
+WARNING: [Synth 8-3848] Net data_fifo_rd4 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:49]
+WARNING: [Synth 8-3848] Net data_fifo_rd5 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:50]
+WARNING: [Synth 8-3848] Net data_fifo_rd6 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:51]
+WARNING: [Synth 8-3848] Net data_fifo_rd7 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:52]
+WARNING: [Synth 8-3848] Net data_fifo_rd8 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:53]
+WARNING: [Synth 8-3848] Net data_fifo_rd9 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:54]
+WARNING: [Synth 8-3848] Net data_fifo_rd10 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:55]
+WARNING: [Synth 8-3848] Net data_fifo_rd11 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:56]
+WARNING: [Synth 8-3848] Net data_fifo_rd12 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:57]
+WARNING: [Synth 8-3848] Net data_fifo_rd13 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:58]
+WARNING: [Synth 8-3848] Net data_fifo_rd14 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:59]
+WARNING: [Synth 8-3848] Net data_fifo_rd15 in module/entity switch_top_tb does not have driver. [D:/vivado_works/switch/switch.srcs/sources_1/new/switch_top_tb.v:60]
+WARNING: [Synth 8-7129] Port ptr_din[15] in module multi_user_fq is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptr_din[14] in module multi_user_fq is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptr_din[13] in module multi_user_fq is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptr_din[12] in module multi_user_fq is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptr_din[11] in module multi_user_fq is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ptr_din[10] in module multi_user_fq is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1508.312 ; gain = 568.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1508.312 ; gain = 568.082
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1508.312 ; gain = 568.082
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.126 . Memory (MB): peak = 1508.312 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post0/u_o_cell_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post0/u_o_cell_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post1/u_o_cell_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post1/u_o_cell_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post2/u_o_cell_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post2/u_o_cell_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post3/u_o_cell_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post3/u_o_cell_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post4/u_o_cell_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post4/u_o_cell_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post5/u_o_cell_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post5/u_o_cell_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post6/u_o_cell_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post6/u_o_cell_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post7/u_o_cell_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post7/u_o_cell_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post8/u_o_cell_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post8/u_o_cell_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post9/u_o_cell_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post9/u_o_cell_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post10/u_o_cell_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post10/u_o_cell_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post11/u_o_cell_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post11/u_o_cell_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post12/u_o_cell_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post12/u_o_cell_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post13/u_o_cell_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post13/u_o_cell_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post14/u_o_cell_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post14/u_o_cell_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post15/u_o_cell_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256/fifo_generator_0_in_context.xdc] for cell 'uut/u_switch_post_top/post15/u_o_cell_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w10_d512/sfifo_ft_w10_d512/sfifo_ft_w10_d512_in_context.xdc] for cell 'uut/core/u_fq/u_ptr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w10_d512/sfifo_ft_w10_d512/sfifo_ft_w10_d512_in_context.xdc] for cell 'uut/core/u_fq/u_ptr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc0/u_ptr_wr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc0/u_ptr_wr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc1/u_ptr_wr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc1/u_ptr_wr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc2/u_ptr_wr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc2/u_ptr_wr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc3/u_ptr_wr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc3/u_ptr_wr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc4/u_ptr_wr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc4/u_ptr_wr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc5/u_ptr_wr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc5/u_ptr_wr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc6/u_ptr_wr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc6/u_ptr_wr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc7/u_ptr_wr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc7/u_ptr_wr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc8/u_ptr_wr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc8/u_ptr_wr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc9/u_ptr_wr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc9/u_ptr_wr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc10/u_ptr_wr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc10/u_ptr_wr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc11/u_ptr_wr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc11/u_ptr_wr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc12/u_ptr_wr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc12/u_ptr_wr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc13/u_ptr_wr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc13/u_ptr_wr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc14/u_ptr_wr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc14/u_ptr_wr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc15/u_ptr_wr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/core/qc15/u_ptr_wr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post0/u_ptr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post0/u_ptr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post1/u_ptr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post1/u_ptr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post2/u_ptr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post2/u_ptr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post3/u_ptr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post3/u_ptr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post4/u_ptr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post4/u_ptr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post5/u_ptr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post5/u_ptr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post6/u_ptr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post6/u_ptr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post7/u_ptr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post7/u_ptr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post8/u_ptr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post8/u_ptr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post9/u_ptr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post9/u_ptr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post10/u_ptr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post10/u_ptr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post11/u_ptr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post11/u_ptr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post12/u_ptr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post12/u_ptr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post13/u_ptr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post13/u_ptr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post14/u_ptr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post14/u_ptr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post15/u_ptr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w16_d32/sfifo_w16_d32/sfifo_w16_d32_in_context.xdc] for cell 'uut/u_switch_post_top/post15/u_ptr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc0/u_ptr_fifo0'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc0/u_ptr_fifo0'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc1/u_ptr_fifo0'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc1/u_ptr_fifo0'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc2/u_ptr_fifo0'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc2/u_ptr_fifo0'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc3/u_ptr_fifo0'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc3/u_ptr_fifo0'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc4/u_ptr_fifo0'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc4/u_ptr_fifo0'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc5/u_ptr_fifo0'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc5/u_ptr_fifo0'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc6/u_ptr_fifo0'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc6/u_ptr_fifo0'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc7/u_ptr_fifo0'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc7/u_ptr_fifo0'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc8/u_ptr_fifo0'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc8/u_ptr_fifo0'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc9/u_ptr_fifo0'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc9/u_ptr_fifo0'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc10/u_ptr_fifo0'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc10/u_ptr_fifo0'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc11/u_ptr_fifo0'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc11/u_ptr_fifo0'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc12/u_ptr_fifo0'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc12/u_ptr_fifo0'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc13/u_ptr_fifo0'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc13/u_ptr_fifo0'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc14/u_ptr_fifo0'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc14/u_ptr_fifo0'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc15/u_ptr_fifo0'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/qc15/u_ptr_fifo0'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/u_ptr_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w16_d32/sfifo_ft_w16_d32/sfifo_ft_w16_d32_in_context.xdc] for cell 'uut/core/u_ptr_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc0/u_ptr_ram'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc0/u_ptr_ram'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc1/u_ptr_ram'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc1/u_ptr_ram'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc2/u_ptr_ram'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc2/u_ptr_ram'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc3/u_ptr_ram'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc3/u_ptr_ram'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc4/u_ptr_ram'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc4/u_ptr_ram'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc5/u_ptr_ram'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc5/u_ptr_ram'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc6/u_ptr_ram'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc6/u_ptr_ram'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc7/u_ptr_ram'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc7/u_ptr_ram'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc8/u_ptr_ram'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc8/u_ptr_ram'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc9/u_ptr_ram'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc9/u_ptr_ram'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc10/u_ptr_ram'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc10/u_ptr_ram'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc11/u_ptr_ram'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc11/u_ptr_ram'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc12/u_ptr_ram'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc12/u_ptr_ram'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc13/u_ptr_ram'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc13/u_ptr_ram'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc14/u_ptr_ram'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc14/u_ptr_ram'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc15/u_ptr_ram'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sram_w16_d512/sram_w16_d512/sram_w16_d512_in_context.xdc] for cell 'uut/core/qc15/u_ptr_ram'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w128_d256/sfifo_ft_w128_d256/sfifo_ft_w128_d256_in_context.xdc] for cell 'uut/core/u_i_cell_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_ft_w128_d256/sfifo_ft_w128_d256/sfifo_ft_w128_d256_in_context.xdc] for cell 'uut/core/u_i_cell_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/dpsram_w4_d512/dpsram_w4_d512/dpsram_w4_d512_in_context.xdc] for cell 'uut/core/u_MC_dpram'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/dpsram_w4_d512/dpsram_w4_d512/dpsram_w4_d512_in_context.xdc] for cell 'uut/core/u_MC_dpram'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/dpsram_w128_d2k/dpsram_w128_d2k/dpsram_w128_d2k_in_context.xdc] for cell 'uut/core/u_data_ram'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/dpsram_w128_d2k/dpsram_w128_d2k/dpsram_w128_d2k_in_context.xdc] for cell 'uut/core/u_data_ram'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post0/u_data_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post0/u_data_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post1/u_data_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post1/u_data_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post2/u_data_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post2/u_data_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post3/u_data_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post3/u_data_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post4/u_data_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post4/u_data_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post5/u_data_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post5/u_data_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post6/u_data_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post6/u_data_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post7/u_data_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post7/u_data_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post8/u_data_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post8/u_data_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post9/u_data_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post9/u_data_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post10/u_data_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post10/u_data_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post11/u_data_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post11/u_data_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post12/u_data_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post12/u_data_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post13/u_data_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post13/u_data_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post14/u_data_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post14/u_data_fifo'
+Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post15/u_data_fifo'
+Finished Parsing XDC File [d:/vivado_works/switch/switch.gen/sources_1/ip/sfifo_w8_d4k/sfifo_w8_d4k/sfifo_w8_d4k_in_context.xdc] for cell 'uut/u_switch_post_top/post15/u_data_fifo'
+Parsing XDC File [D:/vivado_works/switch/switch.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/vivado_works/switch/switch.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.015 . Memory (MB): peak = 1612.023 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+系统找不到指定的路径。
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 1612.023 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1612.023 ; gain = 671.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 1612.023 ; gain = 671.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post0/u_o_cell_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post1/u_o_cell_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post2/u_o_cell_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post3/u_o_cell_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post4/u_o_cell_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post5/u_o_cell_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post6/u_o_cell_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post7/u_o_cell_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post8/u_o_cell_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post9/u_o_cell_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post10/u_o_cell_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post11/u_o_cell_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post12/u_o_cell_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post13/u_o_cell_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post14/u_o_cell_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post15/u_o_cell_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/u_fq/u_ptr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post0/u_ptr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post1/u_ptr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post2/u_ptr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post3/u_ptr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post4/u_ptr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post5/u_ptr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post6/u_ptr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post7/u_ptr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post8/u_ptr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post9/u_ptr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post10/u_ptr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post11/u_ptr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post12/u_ptr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post13/u_ptr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post14/u_ptr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post15/u_ptr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc0/u_ptr_wr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc1/u_ptr_wr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc2/u_ptr_wr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc3/u_ptr_wr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc4/u_ptr_wr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc5/u_ptr_wr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc6/u_ptr_wr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc7/u_ptr_wr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc8/u_ptr_wr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc9/u_ptr_wr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc10/u_ptr_wr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc11/u_ptr_wr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc12/u_ptr_wr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc13/u_ptr_wr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc14/u_ptr_wr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc15/u_ptr_wr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/u_ptr_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc0/u_ptr_fifo0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc1/u_ptr_fifo0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc2/u_ptr_fifo0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc3/u_ptr_fifo0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc4/u_ptr_fifo0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc5/u_ptr_fifo0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc6/u_ptr_fifo0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc7/u_ptr_fifo0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc8/u_ptr_fifo0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc9/u_ptr_fifo0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc10/u_ptr_fifo0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc11/u_ptr_fifo0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc12/u_ptr_fifo0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc13/u_ptr_fifo0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc14/u_ptr_fifo0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc15/u_ptr_fifo0. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc0/u_ptr_ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc1/u_ptr_ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc2/u_ptr_ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc3/u_ptr_ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc4/u_ptr_ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc5/u_ptr_ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc6/u_ptr_ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc7/u_ptr_ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc8/u_ptr_ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc9/u_ptr_ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc10/u_ptr_ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc11/u_ptr_ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc12/u_ptr_ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc13/u_ptr_ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc14/u_ptr_ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/qc15/u_ptr_ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/u_i_cell_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/u_MC_dpram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/core/u_data_ram. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post0/u_data_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post1/u_data_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post2/u_data_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post3/u_data_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post4/u_data_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post5/u_data_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post6/u_data_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post7/u_data_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post8/u_data_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post9/u_data_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post10/u_data_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post11/u_data_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post12/u_data_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post13/u_data_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post14/u_data_fifo. (constraint file  auto generated constraint).
+Applied set_property KEEP_HIERARCHY = SOFT for uut/u_switch_post_top/post15/u_data_fifo. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1612.023 ; gain = 671.793
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'switch_pre'
+INFO: [Synth 8-802] inferred FSM for state register 'FQ_state_reg' in module 'multi_user_fq'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'switch_qc__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_qc__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'switch_qc__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'switch_qc__xdcDup__2'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_qc__xdcDup__2'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'switch_qc__xdcDup__2'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'switch_qc__xdcDup__3'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_qc__xdcDup__3'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'switch_qc__xdcDup__3'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'switch_qc__xdcDup__4'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_qc__xdcDup__4'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'switch_qc__xdcDup__4'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'switch_qc__xdcDup__5'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_qc__xdcDup__5'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'switch_qc__xdcDup__5'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'switch_qc__xdcDup__6'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_qc__xdcDup__6'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'switch_qc__xdcDup__6'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'switch_qc__xdcDup__7'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_qc__xdcDup__7'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'switch_qc__xdcDup__7'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'switch_qc__xdcDup__8'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_qc__xdcDup__8'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'switch_qc__xdcDup__8'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'switch_qc__xdcDup__9'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_qc__xdcDup__9'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'switch_qc__xdcDup__9'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'switch_qc__xdcDup__10'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_qc__xdcDup__10'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'switch_qc__xdcDup__10'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'switch_qc__xdcDup__11'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_qc__xdcDup__11'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'switch_qc__xdcDup__11'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'switch_qc__xdcDup__12'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_qc__xdcDup__12'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'switch_qc__xdcDup__12'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'switch_qc__xdcDup__13'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_qc__xdcDup__13'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'switch_qc__xdcDup__13'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'switch_qc__xdcDup__14'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_qc__xdcDup__14'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'switch_qc__xdcDup__14'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'switch_qc__xdcDup__15'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_qc__xdcDup__15'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'switch_qc__xdcDup__15'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'switch_qc'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_qc'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'switch_qc'
+INFO: [Synth 8-802] inferred FSM for state register 'wr_state_reg' in module 'switch_core'
+INFO: [Synth 8-802] inferred FSM for state register 'rd_state_reg' in module 'switch_core'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_post__xdcDup__1'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_post__xdcDup__2'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_post__xdcDup__3'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_post__xdcDup__4'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_post__xdcDup__5'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_post__xdcDup__6'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_post__xdcDup__7'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_post__xdcDup__8'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_post__xdcDup__9'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_post__xdcDup__10'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_post__xdcDup__11'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_post__xdcDup__12'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_post__xdcDup__13'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_post__xdcDup__14'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_post__xdcDup__15'
+INFO: [Synth 8-802] inferred FSM for state register 'mstate_reg' in module 'switch_post'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE7 |                            00000 |                            00000
+                 iSTATE5 |                            00001 |                            00001
+                 iSTATE3 |                            00010 |                            00010
+                 iSTATE2 |                            00011 |                            00011
+                iSTATE14 |                            00100 |                            00100
+                iSTATE13 |                            00101 |                            00101
+                iSTATE10 |                            00110 |                            00110
+                 iSTATE9 |                            00111 |                            00111
+                iSTATE12 |                            01000 |                            01000
+                iSTATE11 |                            01001 |                            01001
+                 iSTATE8 |                            01010 |                            01010
+                 iSTATE6 |                            01011 |                            01011
+                 iSTATE1 |                            01100 |                            01100
+                 iSTATE0 |                            01101 |                            01101
+                  iSTATE |                            01110 |                            01110
+                iSTATE15 |                            01111 |                            01111
+                 iSTATE4 |                            10000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'switch_pre'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+                 iSTATE0 |                              001 |                              001
+                 iSTATE1 |                              010 |                              010
+                 iSTATE2 |                              011 |                              011
+                 iSTATE3 |                              100 |                              100
+                 iSTATE4 |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'FQ_state_reg' using encoding 'sequential' in module 'multi_user_fq'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              000
+                 iSTATE0 |                              010 |                              001
+                 iSTATE1 |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                             0000
+                 iSTATE3 |                              001 |                             0001
+                 iSTATE0 |                              010 |                             0010
+                 iSTATE2 |                              011 |                             0011
+                 iSTATE1 |                              100 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_qc__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               00
+                 iSTATE0 |                             0010 |                               01
+                 iSTATE1 |                             0100 |                               10
+                 iSTATE2 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              000
+                 iSTATE0 |                              010 |                              001
+                 iSTATE1 |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                             0000
+                 iSTATE3 |                              001 |                             0001
+                 iSTATE0 |                              010 |                             0010
+                 iSTATE2 |                              011 |                             0011
+                 iSTATE1 |                              100 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_qc__xdcDup__2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               00
+                 iSTATE0 |                             0010 |                               01
+                 iSTATE1 |                             0100 |                               10
+                 iSTATE2 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              000
+                 iSTATE0 |                              010 |                              001
+                 iSTATE1 |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                             0000
+                 iSTATE3 |                              001 |                             0001
+                 iSTATE0 |                              010 |                             0010
+                 iSTATE2 |                              011 |                             0011
+                 iSTATE1 |                              100 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_qc__xdcDup__3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               00
+                 iSTATE0 |                             0010 |                               01
+                 iSTATE1 |                             0100 |                               10
+                 iSTATE2 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              000
+                 iSTATE0 |                              010 |                              001
+                 iSTATE1 |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__4'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                             0000
+                 iSTATE3 |                              001 |                             0001
+                 iSTATE0 |                              010 |                             0010
+                 iSTATE2 |                              011 |                             0011
+                 iSTATE1 |                              100 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_qc__xdcDup__4'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               00
+                 iSTATE0 |                             0010 |                               01
+                 iSTATE1 |                             0100 |                               10
+                 iSTATE2 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__4'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              000
+                 iSTATE0 |                              010 |                              001
+                 iSTATE1 |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__5'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                             0000
+                 iSTATE3 |                              001 |                             0001
+                 iSTATE0 |                              010 |                             0010
+                 iSTATE2 |                              011 |                             0011
+                 iSTATE1 |                              100 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_qc__xdcDup__5'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               00
+                 iSTATE0 |                             0010 |                               01
+                 iSTATE1 |                             0100 |                               10
+                 iSTATE2 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__5'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              000
+                 iSTATE0 |                              010 |                              001
+                 iSTATE1 |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__6'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                             0000
+                 iSTATE3 |                              001 |                             0001
+                 iSTATE0 |                              010 |                             0010
+                 iSTATE2 |                              011 |                             0011
+                 iSTATE1 |                              100 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_qc__xdcDup__6'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               00
+                 iSTATE0 |                             0010 |                               01
+                 iSTATE1 |                             0100 |                               10
+                 iSTATE2 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__6'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              000
+                 iSTATE0 |                              010 |                              001
+                 iSTATE1 |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__7'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                             0000
+                 iSTATE3 |                              001 |                             0001
+                 iSTATE0 |                              010 |                             0010
+                 iSTATE2 |                              011 |                             0011
+                 iSTATE1 |                              100 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_qc__xdcDup__7'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               00
+                 iSTATE0 |                             0010 |                               01
+                 iSTATE1 |                             0100 |                               10
+                 iSTATE2 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__7'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              000
+                 iSTATE0 |                              010 |                              001
+                 iSTATE1 |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__8'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                             0000
+                 iSTATE3 |                              001 |                             0001
+                 iSTATE0 |                              010 |                             0010
+                 iSTATE2 |                              011 |                             0011
+                 iSTATE1 |                              100 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_qc__xdcDup__8'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               00
+                 iSTATE0 |                             0010 |                               01
+                 iSTATE1 |                             0100 |                               10
+                 iSTATE2 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__8'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              000
+                 iSTATE0 |                              010 |                              001
+                 iSTATE1 |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__9'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                             0000
+                 iSTATE3 |                              001 |                             0001
+                 iSTATE0 |                              010 |                             0010
+                 iSTATE2 |                              011 |                             0011
+                 iSTATE1 |                              100 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_qc__xdcDup__9'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               00
+                 iSTATE0 |                             0010 |                               01
+                 iSTATE1 |                             0100 |                               10
+                 iSTATE2 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__9'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              000
+                 iSTATE0 |                              010 |                              001
+                 iSTATE1 |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__10'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                             0000
+                 iSTATE3 |                              001 |                             0001
+                 iSTATE0 |                              010 |                             0010
+                 iSTATE2 |                              011 |                             0011
+                 iSTATE1 |                              100 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_qc__xdcDup__10'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               00
+                 iSTATE0 |                             0010 |                               01
+                 iSTATE1 |                             0100 |                               10
+                 iSTATE2 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__10'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              000
+                 iSTATE0 |                              010 |                              001
+                 iSTATE1 |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__11'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                             0000
+                 iSTATE3 |                              001 |                             0001
+                 iSTATE0 |                              010 |                             0010
+                 iSTATE2 |                              011 |                             0011
+                 iSTATE1 |                              100 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_qc__xdcDup__11'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               00
+                 iSTATE0 |                             0010 |                               01
+                 iSTATE1 |                             0100 |                               10
+                 iSTATE2 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__11'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              000
+                 iSTATE0 |                              010 |                              001
+                 iSTATE1 |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__12'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                             0000
+                 iSTATE3 |                              001 |                             0001
+                 iSTATE0 |                              010 |                             0010
+                 iSTATE2 |                              011 |                             0011
+                 iSTATE1 |                              100 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_qc__xdcDup__12'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               00
+                 iSTATE0 |                             0010 |                               01
+                 iSTATE1 |                             0100 |                               10
+                 iSTATE2 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__12'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              000
+                 iSTATE0 |                              010 |                              001
+                 iSTATE1 |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__13'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                             0000
+                 iSTATE3 |                              001 |                             0001
+                 iSTATE0 |                              010 |                             0010
+                 iSTATE2 |                              011 |                             0011
+                 iSTATE1 |                              100 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_qc__xdcDup__13'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               00
+                 iSTATE0 |                             0010 |                               01
+                 iSTATE1 |                             0100 |                               10
+                 iSTATE2 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__13'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              000
+                 iSTATE0 |                              010 |                              001
+                 iSTATE1 |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__14'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                             0000
+                 iSTATE3 |                              001 |                             0001
+                 iSTATE0 |                              010 |                             0010
+                 iSTATE2 |                              011 |                             0011
+                 iSTATE1 |                              100 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_qc__xdcDup__14'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               00
+                 iSTATE0 |                             0010 |                               01
+                 iSTATE1 |                             0100 |                               10
+                 iSTATE2 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__14'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              000
+                 iSTATE0 |                              010 |                              001
+                 iSTATE1 |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__15'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                             0000
+                 iSTATE3 |                              001 |                             0001
+                 iSTATE0 |                              010 |                             0010
+                 iSTATE2 |                              011 |                             0011
+                 iSTATE1 |                              100 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_qc__xdcDup__15'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               00
+                 iSTATE0 |                             0010 |                               01
+                 iSTATE1 |                             0100 |                               10
+                 iSTATE2 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'switch_qc__xdcDup__15'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              000
+                 iSTATE0 |                              010 |                              001
+                 iSTATE1 |                              100 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'one-hot' in module 'switch_qc'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                             0000
+                 iSTATE3 |                              001 |                             0001
+                 iSTATE0 |                              010 |                             0010
+                 iSTATE2 |                              011 |                             0011
+                 iSTATE1 |                              100 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_qc'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                               00
+                 iSTATE0 |                             0010 |                               01
+                 iSTATE1 |                             0100 |                               10
+                 iSTATE2 |                             1000 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'one-hot' in module 'switch_qc'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                             0000
+                 iSTATE0 |                              001 |                             0001
+                 iSTATE1 |                              010 |                             0010
+                 iSTATE2 |                              011 |                             0011
+                 iSTATE3 |                              100 |                             0100
+                 iSTATE4 |                              101 |                             0101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rd_state_reg' using encoding 'sequential' in module 'switch_core'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE2 |                              000 |                             0000
+                 iSTATE3 |                              001 |                             0001
+                  iSTATE |                              010 |                             0010
+                 iSTATE0 |                              011 |                             0011
+                 iSTATE1 |                              100 |                             0100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wr_state_reg' using encoding 'sequential' in module 'switch_core'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE9 |                            00000 |                            00000
+                 iSTATE7 |                            00001 |                            00001
+                iSTATE15 |                            00010 |                            00101
+                iSTATE12 |                            00011 |                            00110
+                iSTATE11 |                            00100 |                            00111
+                iSTATE14 |                            00101 |                            01000
+                iSTATE13 |                            00110 |                            01001
+                iSTATE10 |                            00111 |                            01010
+                 iSTATE8 |                            01000 |                            01011
+                 iSTATE1 |                            01001 |                            01100
+                 iSTATE0 |                            01010 |                            01101
+                  iSTATE |                            01011 |                            01110
+                iSTATE16 |                            01100 |                            01111
+                 iSTATE6 |                            01101 |                            10000
+                 iSTATE5 |                            01110 |                            10001
+                 iSTATE4 |                            01111 |                            00010
+                 iSTATE3 |                            10000 |                            00011
+                iSTATE17 |                            10001 |                            00100
+                 iSTATE2 |                            10010 |                            10010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_post__xdcDup__1'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE9 |                            00000 |                            00000
+                 iSTATE7 |                            00001 |                            00001
+                iSTATE15 |                            00010 |                            00101
+                iSTATE12 |                            00011 |                            00110
+                iSTATE11 |                            00100 |                            00111
+                iSTATE14 |                            00101 |                            01000
+                iSTATE13 |                            00110 |                            01001
+                iSTATE10 |                            00111 |                            01010
+                 iSTATE8 |                            01000 |                            01011
+                 iSTATE1 |                            01001 |                            01100
+                 iSTATE0 |                            01010 |                            01101
+                  iSTATE |                            01011 |                            01110
+                iSTATE16 |                            01100 |                            01111
+                 iSTATE6 |                            01101 |                            10000
+                 iSTATE5 |                            01110 |                            10001
+                 iSTATE4 |                            01111 |                            00010
+                 iSTATE3 |                            10000 |                            00011
+                iSTATE17 |                            10001 |                            00100
+                 iSTATE2 |                            10010 |                            10010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_post__xdcDup__2'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE9 |                            00000 |                            00000
+                 iSTATE7 |                            00001 |                            00001
+                iSTATE15 |                            00010 |                            00101
+                iSTATE12 |                            00011 |                            00110
+                iSTATE11 |                            00100 |                            00111
+                iSTATE14 |                            00101 |                            01000
+                iSTATE13 |                            00110 |                            01001
+                iSTATE10 |                            00111 |                            01010
+                 iSTATE8 |                            01000 |                            01011
+                 iSTATE1 |                            01001 |                            01100
+                 iSTATE0 |                            01010 |                            01101
+                  iSTATE |                            01011 |                            01110
+                iSTATE16 |                            01100 |                            01111
+                 iSTATE6 |                            01101 |                            10000
+                 iSTATE5 |                            01110 |                            10001
+                 iSTATE4 |                            01111 |                            00010
+                 iSTATE3 |                            10000 |                            00011
+                iSTATE17 |                            10001 |                            00100
+                 iSTATE2 |                            10010 |                            10010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_post__xdcDup__3'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE9 |                            00000 |                            00000
+                 iSTATE7 |                            00001 |                            00001
+                iSTATE15 |                            00010 |                            00101
+                iSTATE12 |                            00011 |                            00110
+                iSTATE11 |                            00100 |                            00111
+                iSTATE14 |                            00101 |                            01000
+                iSTATE13 |                            00110 |                            01001
+                iSTATE10 |                            00111 |                            01010
+                 iSTATE8 |                            01000 |                            01011
+                 iSTATE1 |                            01001 |                            01100
+                 iSTATE0 |                            01010 |                            01101
+                  iSTATE |                            01011 |                            01110
+                iSTATE16 |                            01100 |                            01111
+                 iSTATE6 |                            01101 |                            10000
+                 iSTATE5 |                            01110 |                            10001
+                 iSTATE4 |                            01111 |                            00010
+                 iSTATE3 |                            10000 |                            00011
+                iSTATE17 |                            10001 |                            00100
+                 iSTATE2 |                            10010 |                            10010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_post__xdcDup__4'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE9 |                            00000 |                            00000
+                 iSTATE7 |                            00001 |                            00001
+                iSTATE15 |                            00010 |                            00101
+                iSTATE12 |                            00011 |                            00110
+                iSTATE11 |                            00100 |                            00111
+                iSTATE14 |                            00101 |                            01000
+                iSTATE13 |                            00110 |                            01001
+                iSTATE10 |                            00111 |                            01010
+                 iSTATE8 |                            01000 |                            01011
+                 iSTATE1 |                            01001 |                            01100
+                 iSTATE0 |                            01010 |                            01101
+                  iSTATE |                            01011 |                            01110
+                iSTATE16 |                            01100 |                            01111
+                 iSTATE6 |                            01101 |                            10000
+                 iSTATE5 |                            01110 |                            10001
+                 iSTATE4 |                            01111 |                            00010
+                 iSTATE3 |                            10000 |                            00011
+                iSTATE17 |                            10001 |                            00100
+                 iSTATE2 |                            10010 |                            10010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_post__xdcDup__5'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE9 |                            00000 |                            00000
+                 iSTATE7 |                            00001 |                            00001
+                iSTATE15 |                            00010 |                            00101
+                iSTATE12 |                            00011 |                            00110
+                iSTATE11 |                            00100 |                            00111
+                iSTATE14 |                            00101 |                            01000
+                iSTATE13 |                            00110 |                            01001
+                iSTATE10 |                            00111 |                            01010
+                 iSTATE8 |                            01000 |                            01011
+                 iSTATE1 |                            01001 |                            01100
+                 iSTATE0 |                            01010 |                            01101
+                  iSTATE |                            01011 |                            01110
+                iSTATE16 |                            01100 |                            01111
+                 iSTATE6 |                            01101 |                            10000
+                 iSTATE5 |                            01110 |                            10001
+                 iSTATE4 |                            01111 |                            00010
+                 iSTATE3 |                            10000 |                            00011
+                iSTATE17 |                            10001 |                            00100
+                 iSTATE2 |                            10010 |                            10010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_post__xdcDup__6'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE9 |                            00000 |                            00000
+                 iSTATE7 |                            00001 |                            00001
+                iSTATE15 |                            00010 |                            00101
+                iSTATE12 |                            00011 |                            00110
+                iSTATE11 |                            00100 |                            00111
+                iSTATE14 |                            00101 |                            01000
+                iSTATE13 |                            00110 |                            01001
+                iSTATE10 |                            00111 |                            01010
+                 iSTATE8 |                            01000 |                            01011
+                 iSTATE1 |                            01001 |                            01100
+                 iSTATE0 |                            01010 |                            01101
+                  iSTATE |                            01011 |                            01110
+                iSTATE16 |                            01100 |                            01111
+                 iSTATE6 |                            01101 |                            10000
+                 iSTATE5 |                            01110 |                            10001
+                 iSTATE4 |                            01111 |                            00010
+                 iSTATE3 |                            10000 |                            00011
+                iSTATE17 |                            10001 |                            00100
+                 iSTATE2 |                            10010 |                            10010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_post__xdcDup__7'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE9 |                            00000 |                            00000
+                 iSTATE7 |                            00001 |                            00001
+                iSTATE15 |                            00010 |                            00101
+                iSTATE12 |                            00011 |                            00110
+                iSTATE11 |                            00100 |                            00111
+                iSTATE14 |                            00101 |                            01000
+                iSTATE13 |                            00110 |                            01001
+                iSTATE10 |                            00111 |                            01010
+                 iSTATE8 |                            01000 |                            01011
+                 iSTATE1 |                            01001 |                            01100
+                 iSTATE0 |                            01010 |                            01101
+                  iSTATE |                            01011 |                            01110
+                iSTATE16 |                            01100 |                            01111
+                 iSTATE6 |                            01101 |                            10000
+                 iSTATE5 |                            01110 |                            10001
+                 iSTATE4 |                            01111 |                            00010
+                 iSTATE3 |                            10000 |                            00011
+                iSTATE17 |                            10001 |                            00100
+                 iSTATE2 |                            10010 |                            10010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_post__xdcDup__8'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE9 |                            00000 |                            00000
+                 iSTATE7 |                            00001 |                            00001
+                iSTATE15 |                            00010 |                            00101
+                iSTATE12 |                            00011 |                            00110
+                iSTATE11 |                            00100 |                            00111
+                iSTATE14 |                            00101 |                            01000
+                iSTATE13 |                            00110 |                            01001
+                iSTATE10 |                            00111 |                            01010
+                 iSTATE8 |                            01000 |                            01011
+                 iSTATE1 |                            01001 |                            01100
+                 iSTATE0 |                            01010 |                            01101
+                  iSTATE |                            01011 |                            01110
+                iSTATE16 |                            01100 |                            01111
+                 iSTATE6 |                            01101 |                            10000
+                 iSTATE5 |                            01110 |                            10001
+                 iSTATE4 |                            01111 |                            00010
+                 iSTATE3 |                            10000 |                            00011
+                iSTATE17 |                            10001 |                            00100
+                 iSTATE2 |                            10010 |                            10010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_post__xdcDup__9'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE9 |                            00000 |                            00000
+                 iSTATE7 |                            00001 |                            00001
+                iSTATE15 |                            00010 |                            00101
+                iSTATE12 |                            00011 |                            00110
+                iSTATE11 |                            00100 |                            00111
+                iSTATE14 |                            00101 |                            01000
+                iSTATE13 |                            00110 |                            01001
+                iSTATE10 |                            00111 |                            01010
+                 iSTATE8 |                            01000 |                            01011
+                 iSTATE1 |                            01001 |                            01100
+                 iSTATE0 |                            01010 |                            01101
+                  iSTATE |                            01011 |                            01110
+                iSTATE16 |                            01100 |                            01111
+                 iSTATE6 |                            01101 |                            10000
+                 iSTATE5 |                            01110 |                            10001
+                 iSTATE4 |                            01111 |                            00010
+                 iSTATE3 |                            10000 |                            00011
+                iSTATE17 |                            10001 |                            00100
+                 iSTATE2 |                            10010 |                            10010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_post__xdcDup__10'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE9 |                            00000 |                            00000
+                 iSTATE7 |                            00001 |                            00001
+                iSTATE15 |                            00010 |                            00101
+                iSTATE12 |                            00011 |                            00110
+                iSTATE11 |                            00100 |                            00111
+                iSTATE14 |                            00101 |                            01000
+                iSTATE13 |                            00110 |                            01001
+                iSTATE10 |                            00111 |                            01010
+                 iSTATE8 |                            01000 |                            01011
+                 iSTATE1 |                            01001 |                            01100
+                 iSTATE0 |                            01010 |                            01101
+                  iSTATE |                            01011 |                            01110
+                iSTATE16 |                            01100 |                            01111
+                 iSTATE6 |                            01101 |                            10000
+                 iSTATE5 |                            01110 |                            10001
+                 iSTATE4 |                            01111 |                            00010
+                 iSTATE3 |                            10000 |                            00011
+                iSTATE17 |                            10001 |                            00100
+                 iSTATE2 |                            10010 |                            10010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_post__xdcDup__11'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE9 |                            00000 |                            00000
+                 iSTATE7 |                            00001 |                            00001
+                iSTATE15 |                            00010 |                            00101
+                iSTATE12 |                            00011 |                            00110
+                iSTATE11 |                            00100 |                            00111
+                iSTATE14 |                            00101 |                            01000
+                iSTATE13 |                            00110 |                            01001
+                iSTATE10 |                            00111 |                            01010
+                 iSTATE8 |                            01000 |                            01011
+                 iSTATE1 |                            01001 |                            01100
+                 iSTATE0 |                            01010 |                            01101
+                  iSTATE |                            01011 |                            01110
+                iSTATE16 |                            01100 |                            01111
+                 iSTATE6 |                            01101 |                            10000
+                 iSTATE5 |                            01110 |                            10001
+                 iSTATE4 |                            01111 |                            00010
+                 iSTATE3 |                            10000 |                            00011
+                iSTATE17 |                            10001 |                            00100
+                 iSTATE2 |                            10010 |                            10010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_post__xdcDup__12'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE9 |                            00000 |                            00000
+                 iSTATE7 |                            00001 |                            00001
+                iSTATE15 |                            00010 |                            00101
+                iSTATE12 |                            00011 |                            00110
+                iSTATE11 |                            00100 |                            00111
+                iSTATE14 |                            00101 |                            01000
+                iSTATE13 |                            00110 |                            01001
+                iSTATE10 |                            00111 |                            01010
+                 iSTATE8 |                            01000 |                            01011
+                 iSTATE1 |                            01001 |                            01100
+                 iSTATE0 |                            01010 |                            01101
+                  iSTATE |                            01011 |                            01110
+                iSTATE16 |                            01100 |                            01111
+                 iSTATE6 |                            01101 |                            10000
+                 iSTATE5 |                            01110 |                            10001
+                 iSTATE4 |                            01111 |                            00010
+                 iSTATE3 |                            10000 |                            00011
+                iSTATE17 |                            10001 |                            00100
+                 iSTATE2 |                            10010 |                            10010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_post__xdcDup__13'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE9 |                            00000 |                            00000
+                 iSTATE7 |                            00001 |                            00001
+                iSTATE15 |                            00010 |                            00101
+                iSTATE12 |                            00011 |                            00110
+                iSTATE11 |                            00100 |                            00111
+                iSTATE14 |                            00101 |                            01000
+                iSTATE13 |                            00110 |                            01001
+                iSTATE10 |                            00111 |                            01010
+                 iSTATE8 |                            01000 |                            01011
+                 iSTATE1 |                            01001 |                            01100
+                 iSTATE0 |                            01010 |                            01101
+                  iSTATE |                            01011 |                            01110
+                iSTATE16 |                            01100 |                            01111
+                 iSTATE6 |                            01101 |                            10000
+                 iSTATE5 |                            01110 |                            10001
+                 iSTATE4 |                            01111 |                            00010
+                 iSTATE3 |                            10000 |                            00011
+                iSTATE17 |                            10001 |                            00100
+                 iSTATE2 |                            10010 |                            10010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_post__xdcDup__14'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE9 |                            00000 |                            00000
+                 iSTATE7 |                            00001 |                            00001
+                iSTATE15 |                            00010 |                            00101
+                iSTATE12 |                            00011 |                            00110
+                iSTATE11 |                            00100 |                            00111
+                iSTATE14 |                            00101 |                            01000
+                iSTATE13 |                            00110 |                            01001
+                iSTATE10 |                            00111 |                            01010
+                 iSTATE8 |                            01000 |                            01011
+                 iSTATE1 |                            01001 |                            01100
+                 iSTATE0 |                            01010 |                            01101
+                  iSTATE |                            01011 |                            01110
+                iSTATE16 |                            01100 |                            01111
+                 iSTATE6 |                            01101 |                            10000
+                 iSTATE5 |                            01110 |                            10001
+                 iSTATE4 |                            01111 |                            00010
+                 iSTATE3 |                            10000 |                            00011
+                iSTATE17 |                            10001 |                            00100
+                 iSTATE2 |                            10010 |                            10010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_post__xdcDup__15'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE9 |                            00000 |                            00000
+                 iSTATE7 |                            00001 |                            00001
+                iSTATE15 |                            00010 |                            00101
+                iSTATE12 |                            00011 |                            00110
+                iSTATE11 |                            00100 |                            00111
+                iSTATE14 |                            00101 |                            01000
+                iSTATE13 |                            00110 |                            01001
+                iSTATE10 |                            00111 |                            01010
+                 iSTATE8 |                            01000 |                            01011
+                 iSTATE1 |                            01001 |                            01100
+                 iSTATE0 |                            01010 |                            01101
+                  iSTATE |                            01011 |                            01110
+                iSTATE16 |                            01100 |                            01111
+                 iSTATE6 |                            01101 |                            10000
+                 iSTATE5 |                            01110 |                            10001
+                 iSTATE4 |                            01111 |                            00010
+                 iSTATE3 |                            10000 |                            00011
+                iSTATE17 |                            10001 |                            00100
+                 iSTATE2 |                            10010 |                            10010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mstate_reg' using encoding 'sequential' in module 'switch_post'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 1612.023 ; gain = 671.793
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   12 Bit       Adders := 64    
+	   2 Input    9 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 2     
+	   4 Input    3 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---Registers : 
+	              128 Bit    Registers := 1     
+	               16 Bit    Registers := 102   
+	               12 Bit    Registers := 48    
+	               10 Bit    Registers := 19    
+	                8 Bit    Registers := 17    
+	                6 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 207   
++---Muxes : 
+	  17 Input  128 Bit        Muxes := 2     
+	   5 Input   16 Bit        Muxes := 33    
+	  17 Input   16 Bit        Muxes := 16    
+	   6 Input   16 Bit        Muxes := 1     
+	  19 Input   12 Bit        Muxes := 48    
+	   6 Input   10 Bit        Muxes := 1     
+	   2 Input   10 Bit        Muxes := 16    
+	   5 Input   10 Bit        Muxes := 16    
+	  19 Input    8 Bit        Muxes := 16    
+	  17 Input    8 Bit        Muxes := 1     
+	   5 Input    6 Bit        Muxes := 1     
+	  19 Input    5 Bit        Muxes := 16    
+	   2 Input    5 Bit        Muxes := 17    
+	  17 Input    5 Bit        Muxes := 1     
+	   2 Input    4 Bit        Muxes := 1     
+	   6 Input    3 Bit        Muxes := 2     
+	   5 Input    3 Bit        Muxes := 17    
+	   2 Input    3 Bit        Muxes := 17    
+	   5 Input    2 Bit        Muxes := 17    
+	   6 Input    2 Bit        Muxes := 1     
+	  19 Input    1 Bit        Muxes := 144   
+	  17 Input    1 Bit        Muxes := 22    
+	   6 Input    1 Bit        Muxes := 12    
+	   3 Input    1 Bit        Muxes := 48    
+	   2 Input    1 Bit        Muxes := 20    
+	   5 Input    1 Bit        Muxes := 189   
+	   4 Input    1 Bit        Muxes := 48    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1815.371 ; gain = 875.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 1815.371 ; gain = 875.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 1815.371 ; gain = 875.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:05 ; elapsed = 00:01:06 . Memory (MB): peak = 1815.371 ; gain = 875.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 1815.371 ; gain = 875.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:09 ; elapsed = 00:01:11 . Memory (MB): peak = 1815.371 ; gain = 875.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:10 ; elapsed = 00:01:11 . Memory (MB): peak = 1815.371 ; gain = 875.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:10 ; elapsed = 00:01:11 . Memory (MB): peak = 1815.371 ; gain = 875.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:10 ; elapsed = 00:01:11 . Memory (MB): peak = 1815.371 ; gain = 875.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:10 ; elapsed = 00:01:11 . Memory (MB): peak = 1815.371 ; gain = 875.141
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-------------------+----------+
+|      |BlackBox name      |Instances |
++------+-------------------+----------+
+|1     |sfifo_ft_w128_d256 |         1|
+|2     |sfifo_ft_w16_d32   |        17|
+|3     |dpsram_w4_d512     |         1|
+|4     |dpsram_w128_d2k    |         1|
+|5     |sfifo_w16_d32      |        32|
+|6     |sram_w16_d512      |        16|
+|7     |sfifo_ft_w10_d512  |         1|
+|8     |sfifo_ft_w144_d256 |        16|
+|9     |sfifo_w8_d4k       |        16|
++------+-------------------+----------+
+
+Report Cell Usage: 
++------+-------------------+------+
+|      |Cell               |Count |
++------+-------------------+------+
+|1     |dpsram_w128_d2k    |     1|
+|2     |dpsram_w4_d512     |     1|
+|3     |sfifo_ft_w10_d512  |     1|
+|4     |sfifo_ft_w128_d256 |     1|
+|5     |sfifo_ft_w144_d256 |    16|
+|21    |sfifo_ft_w16_d32   |    17|
+|38    |sfifo_w16_d32      |    32|
+|70    |sfifo_w8_d4k       |    16|
+|86    |sram_w16_d512      |    16|
+|102   |BUFG               |     1|
+|103   |CARRY4             |   288|
+|104   |LUT1               |   309|
+|105   |LUT2               |   114|
+|106   |LUT3               |  1213|
+|107   |LUT4               |   511|
+|108   |LUT5               |   645|
+|109   |LUT6               |  2234|
+|110   |MUXF7              |   150|
+|111   |MUXF8              |     2|
+|112   |FDCE               |  3248|
+|113   |FDPE               |    32|
+|114   |FDRE               |    33|
++------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:10 ; elapsed = 00:01:11 . Memory (MB): peak = 1815.371 ; gain = 875.141
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:59 ; elapsed = 00:01:08 . Memory (MB): peak = 1815.371 ; gain = 771.430
+Synthesis Optimization Complete : Time (s): cpu = 00:01:10 ; elapsed = 00:01:12 . Memory (MB): peak = 1815.371 ; gain = 875.141
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.135 . Memory (MB): peak = 1815.371 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 440 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1815.371 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+系统找不到指定的路径。
+Synth Design complete | Checksum: dd9d5ad4
+INFO: [Common 17-83] Releasing license: Synthesis
+216 Infos, 49 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:14 ; elapsed = 00:01:18 . Memory (MB): peak = 1815.371 ; gain = 1325.855
+Write ShapeDB Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1815.371 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/vivado_works/switch/switch.runs/synth_1/switch_top_tb.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file switch_top_tb_utilization_synth.rpt -pb switch_top_tb_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu May  9 15:09:31 2024...

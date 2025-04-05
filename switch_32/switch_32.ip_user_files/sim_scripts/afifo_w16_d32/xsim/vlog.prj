@@ -1,0 +1,7 @@
+verilog xil_defaultlib  \
+"../../../../switch_32.gen/sources_1/ip/afifo_w16_d32/sim/afifo_w16_d32.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

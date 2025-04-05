@@ -1,0 +1,2 @@
+sfifo_ft_w14_d1024.v,verilog,xil_defaultlib,../../../../switch_32.gen/sources_1/ip/sfifo_ft_w14_d1024/sim/sfifo_ft_w14_d1024.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

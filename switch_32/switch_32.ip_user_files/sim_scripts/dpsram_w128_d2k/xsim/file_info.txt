@@ -1,0 +1,2 @@
+dpsram_w128_d2k.v,verilog,xil_defaultlib,../../../../switch.gen/sources_1/ip/dpsram_w128_d2k/sim/dpsram_w128_d2k.v,
+glbl.v,Verilog,xil_defaultlib,glbl.v

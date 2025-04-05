@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a200tfbg676-2" LaunchTime="1715238474" LaunchIncrCheckpoint="$PSRCDIR/utils_1/imports/synth_1/multi_user_fq.dcp">
+  <File Type="PA-TCL" Name="switch_top_tb.tcl"/>
+  <File Type="REPORTS-TCL" Name="switch_top_tb_reports.tcl"/>
+  <File Type="RDS-RDS" Name="switch_top_tb.vds"/>
+  <File Type="RDS-UTIL" Name="tb1_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="tb1_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="switch_top_tb.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256.xci">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../switch1/switch.srcs/sources_1/ip/sfifo_ft_w144_d256/sfifo_ft_w144_d256.xci"/>
+        <Attr Name="ImportTime" Val="1715782194"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/multi_user_fq.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../switch1/switch.srcs/sources_1/new/multi_user_fq.v"/>
+        <Attr Name="ImportTime" Val="1714744694"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/switch_core.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../switch1/switch.srcs/sources_1/new/switch_core.v"/>
+        <Attr Name="ImportTime" Val="1715773394"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/switch_post.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../switch1/switch.srcs/sources_1/new/switch_post.v"/>
+        <Attr Name="ImportTime" Val="1714806572"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/switch_post_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../switch1/switch.srcs/sources_1/new/switch_post_top.v"/>
+        <Attr Name="ImportTime" Val="1714997656"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/switch_pre.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../switch1/switch.srcs/sources_1/new/switch_pre.v"/>
+        <Attr Name="ImportTime" Val="1714743944"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/switch_qc.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../switch1/switch.srcs/sources_1/new/switch_qc.v"/>
+        <Attr Name="ImportTime" Val="1714804640"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/switch_top.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../switch1/switch.srcs/sources_1/new/switch_top.v"/>
+        <Attr Name="ImportTime" Val="1714999778"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/switch_top_tb.v">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../switch1/switch.srcs/sources_1/new/switch_top_tb.v"/>
+        <Attr Name="ImportTime" Val="1714999972"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="switch_top_tb"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/multi_user_fq.dcp">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../switch1/switch.srcs/utils_1/imports/synth_1/multi_user_fq.dcp"/>
+        <Attr Name="ImportTime" Val="1715238454"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2023"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="dpsram_w4_d512"/>
+  <BlockFileSet Type="BlockSrcs" Name="sfifo_ft_w10_d512"/>
+  <BlockFileSet Type="BlockSrcs" Name="sfifo_w16_d32"/>
+  <BlockFileSet Type="BlockSrcs" Name="sfifo_ft_w16_d32"/>
+  <BlockFileSet Type="BlockSrcs" Name="sram_w16_d512"/>
+  <BlockFileSet Type="BlockSrcs" Name="sfifo_w8_d4k"/>
+  <BlockFileSet Type="BlockSrcs" Name="sfifo_ft_w128_d256"/>
+  <BlockFileSet Type="BlockSrcs" Name="dpsram_w128_d2k"/>
+</GenRun>

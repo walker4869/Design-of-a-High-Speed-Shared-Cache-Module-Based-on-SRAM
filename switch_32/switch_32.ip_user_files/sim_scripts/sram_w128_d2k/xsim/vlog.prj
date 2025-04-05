@@ -1,0 +1,7 @@
+verilog xil_defaultlib  \
+"../../../../switch_32.gen/sources_1/ip/sram_w128_d2k/sim/sram_w128_d2k.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
